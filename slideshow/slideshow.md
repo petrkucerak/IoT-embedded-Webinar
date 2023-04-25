@@ -33,6 +33,9 @@ style: |
   footer {
    color: grey;
   }
+  p{
+    font-size: 0.8rem;
+  }
 
 
 # header:
@@ -509,6 +512,368 @@ footer: IoT: Trendy
 ![bg fit](assets/curpauza.png)
 
 ---
-## Chci feedback!
-![bg w:450](assets/feedback.png)
+
+<!-- footer: AI: oblasti -->
+
+# AI
+
+- bayesovské sítě
+- fuzzy logika
+- evoluční algoritmy
+- multiagetní systémy
+- strojové učení
+- neuronové sítě
+- počítačové vidění
+- zpracování přirozeného jazyka (NLP)
+
+---
+
+## Bayesovské sítě
+
+- pravděpodobnostní model
+- grafová reprezentace
+- *teorie pravděpodobnosti*
+
+![bg right:60%](assets/bayesian_network)
+
+---
+
+## Fuzzy logika
+
+- rozdíl od výrokové logiky ($true$/$false$)
+  $x \in [0;1]$
+
+- fuzzy logika
+  $\forall x \in \mathbb{R}\quad and\quad x \in <0;1>$
+
+- vícehodnotová logika
+
+---
+
+## Evoluční algoritmy
+
+- alogritmy inspirované přírodou, *přirozeným výběrem*
+- pro úlohy s časovou náročnostní bez konvenční řešení,
+  např.:
+  - Lagrangelovy multiplikátory *(extrémy fce)*
+  - lineární programování
+  - kvadratické programování
+$\quad$
+- obecně spíše heruistické optimalizační technik
+- genetické algoritmy, simulované žihání
+
+---
+
+## Multiagentní systémy
+
+- interakce agentů
+- každý má jinou znalost
+- společně řeší problém
+- robotika, DS, ...
+
+![bg right](assets/multiagent.jpeg)
+
+---
+
+## Strojové učení
+
+- učení
+  - s učitlem
+  - bez učitele
+  - hybrid
+  - zpětnovazební (posilování)
+- elementární úlohy
+  - shlukování (do skupin dle společných vlastností)
+  - regrese (predikce výstupu podle vstupu)
+  - klasifikace (rozdělování do tříd)
+- vektor a matice
+
+---
+
+## Strojové učení
+### Lineární regrese
+
+- např. nejmenší čtverce
+- v praxi mnohem více dimenzí
+- *využití predikce zvuku*
+
+$$
+S(a,b) = \sum_{i=1}^{n}[f(x_i)-y_i]^2 = \sum_{i=1}^{n}(ax_i + b - y_i)^2,
+$$
+kde $[x_i,y_i]$ jsou souřadnice aporximovaných bodů
+
+![bg right fit](assets/lin_regrerse)
+
+---
+
+## Neuronové sítě
+
+- vzorem jsou biologické struktury
+- distribuovaný a paralelní systém
+- příměr *síla vazby*
+
+![bg right](assets/neuron-network.jpeg)
+
+---
+
+## Počítačové vidění
+
+- opak počítačové grafiky
+- typické úlohy
+  - poznování objektů
+  - indetifikace
+  - detekce
+  - OCR
+- *matice, optimalizace a lingebra*
+
+![bg right](assets/computer-vision.jpeg)
+
+---
+
+## Zpracování přirozeného jazyka
+- multidisciplinární obor
+- snaha porozumět jazyku strojem
+- jazyky, automaty, ...
+- dílčí úlohy
+  - *korektura textů*
+  - extrakce infromací
+  - generování přirozeného jazyka
+  - atd.
+
+![bg right](assets/NLP.jpeg)
+
+<!-- (lingivistika, matematika, informatika) -->
+  <!-- - *korektura textů*
+  - extrakce infromací
+  - generování přirozeného jazyka
+  - rozpoznávání a sytnéza řeči
+  - strojový překlad -->
+
+--- 
+
+<!-- footer: AI: Azure & AI -->
+<!-- Druha část - Azure a AI služby -->
+
+# Azure a AI
+
+- [Azure Applied AI Services](https://azure.microsoft.com/en-us/products/applied-ai-services/#overview)
+- [Azure Cognitive Services](https://azure.microsoft.com/en-us/products/cognitive-services/)
+- [Azure Machine Learning](https://azure.microsoft.com/en-us/products/machine-learning/#product-overview)
+- [AI infrastructure](https://www.microsoft.com/en-us/research/project/ai-at-scale/)
+
+<!--
+Na strankach MSFT o Azure AI, 4 kategorie
+
+Otakzaaa?
+
+- AI infrastructures
+  - bezi na FPGAckach, kteras se prizpusobuji potrebam vypoctu
+
+-->
+
+---
+
+# Azure Applied AI Services
+
+![bg cover](assets/11.png)
+
+<!--
+Azure Applied AI Services (aplikovane sluzby) 
+  - Bot Services
+  - Form Recognizer
+  - Cognitive Search (AI cloud search)
+  - Metrics Advisor (sledovani metrik a analyza incidentu)
+  - Video Indexor (extrakce vyznamu z audia nebo videoa)
+  - Immersive Reader
+
+-->
+
+---
+
+## Azure Cognitive Services
+
+- speech
+- language
+- vision
+- decision
+- OpenAI
+
+![bg right:60% cover](assets/12.png)
+
+
+
+<!--
+
+DALL-E input: digital art Congitive Services 
+
+Azure Cognitive Services (jake mame smysly, ne doslova)
+  - Speech (speech2text, text2speech, speech transaltion, speaker recognition)
+  - Language (entity recognition, question answeing, translator, ...)
+  - Vision (computer, custom fision, face API)
+  - decision (anomaly detector, content moderator, personalizer)
+  - Azure openAI Serivces (vyuziti jiz existujicich opensource modelu jako DALL-E 2, GPT-3, ...)
+-->
+
+---
+
+## Azure Machine Learning
+
+### Příprava dat
+
+![bg fit](assets/prepare-data.png)
+
+<!-- 
+Azure Machine Learning
+  - spracovani datasetu (oznaceni, uprava, kompletovani)
+  - civceni a buildeni modelu
+    - CLI, Python SDK
+    - Notebooks
+    - Automated
+    - VS Code supports
+    - Drag-and/Drop designer
+    - Fraimeworks (TenserFlow, PyTorch, ...)
+  - deploying a nasazeni do provozu
+    - CI/CD pipelines
+    - AI endpoins
+    - optimalization
+    - hybrid and multicloud
+    - mode repository
+    - prebuilt images
+  - monitorovani a sprava
+    - policies
+    - security
+    - error analytics
+    - audits
+-->
+---
+## Azure Machine Learning
+
+### Trénování modelu
+
+![bg fit](assets/build-and-train.png)
+
+<!-- 
+Azure Machine Learning
+  - spracovani datasetu (oznaceni, uprava, kompletovani)
+  - civceni a buildeni modelu
+    - CLI, Python SDK
+    - Notebooks
+    - Automated
+    - VS Code supports
+    - Drag-and/Drop designer
+    - Fraimeworks (TenserFlow, PyTorch, ...)
+  - deploying a nasazeni do provozu
+    - CI/CD pipelines
+    - AI endpoins
+    - optimalization
+    - hybrid and multicloud
+    - mode repository
+    - prebuilt images
+  - monitorovani a sprava
+    - policies
+    - security
+    - error analytics
+    - audits
+-->
+---
+## Azure Machine Learning
+
+### Validování a nasazení
+
+![bg fit](assets/validate-and-deploy.png)
+
+<!-- 
+Azure Machine Learning
+  - spracovani datasetu (oznaceni, uprava, kompletovani)
+  - civceni a buildeni modelu
+    - CLI, Python SDK
+    - Notebooks
+    - Automated
+    - VS Code supports
+    - Drag-and/Drop designer
+    - Fraimeworks (TenserFlow, PyTorch, ...)
+  - deploying a nasazeni do provozu
+    - CI/CD pipelines
+    - AI endpoins
+    - optimalization
+    - hybrid and multicloud
+    - mode repository
+    - prebuilt images
+  - monitorovani a sprava
+    - policies
+    - security
+    - error analytics
+    - audits
+-->
+---
+## Azure Machine Learning
+
+### Monitorování a správa
+
+![bg fit](assets/manage-and-monitor.png)
+
+<!-- 
+Azure Machine Learning
+  - spracovani datasetu (oznaceni, uprava, kompletovani)
+  - civceni a buildeni modelu
+    - CLI, Python SDK
+    - Notebooks
+    - Automated
+    - VS Code supports
+    - Drag-and/Drop designer
+    - Fraimeworks (TenserFlow, PyTorch, ...)
+  - deploying a nasazeni do provozu
+    - CI/CD pipelines
+    - AI endpoins
+    - optimalization
+    - hybrid and multicloud
+    - mode repository
+    - prebuilt images
+  - monitorovani a sprava
+    - policies
+    - security
+    - error analytics
+    - audits
+-->
+
+---
+
+# Otázky a výzvy
+
+- **etika v účení a používání AI**
+- problematika výpočetní síly, *edge computing*
+- **datasety pro učení**
+- **legislativa a autorská práva**
+- transformace pracovních pozic
+
+<!-- 
+
+OTÁZKY A VÝZVY, KTERÉ STOJÍ PŘED NÁMI
+
+- O čem nevíme? Válka přispívá rozvoji, co přinese konflikt na ukrajině?
+- Problematika výpočetního výkonu - edge computing
+- Problematika data pro učení
+- Problematika legislativy - nová osoba v EU
+- Transformace pracovních pozic 
+ 
+-->
+
+---
+<!-- footer: "" -->
+
+![bg](assets/OIG.jpeg)
+
+---
+$\quad$
+$\quad$
+$\quad$
+$\quad$
+$\quad$$\quad$
+$\quad$
+$\quad$
+$\quad$
+$\quad$
+# Chci feedback!
+**A pojďme diskutovat**
+![bg right:45%](assets/feedback.png)
 
