@@ -132,7 +132,7 @@ Ma smysl se IoT věnovat?
 - Fyzikální -> Signál (senzory)
 - zpracování signálu (MCU)
 - síťová (vysílání)
-- informace -> znalost (těžba)
+- informace -> znalost (IoT služba)
 
 <!-- 
 # Vrstvy IoT
@@ -246,6 +246,7 @@ Rozdelil jsem si sam, neni nijako standartizovano
 - rozdílné požadavky
 - typické hiearchické uspořádání
 - bezdrátové / drátové připojení do sítě
+- protokoly (MQTT, HTTP, SSH, ESPNOW, ...)
 
 ---
 
@@ -341,6 +342,141 @@ backgroundColor: "#000"
 - ve verzi 5.0 až 255 bajtů na jednu zprávu
 
 ![bg right fit](assets/bluetooth)
+
+---
+
+## 4. IoT služba
+### Informace -> Znalost
+
+![h:370](assets/IoT-as-Service.png)
+
+<!--
+
+Data Extraction
+• Zachycení vnitřních / vnějších stavů IoT zařízení a schopnost 
+zařízení tato data poskytnout
+
+Data Ingestion
+• zahrnuje získávání událostí ze zdrojů a jejich přenos do 
+datového úložiště k dalšímu zpracování. Jde o přesun 
+nestrukturovaných dat - z místa, kde vznikají, do systému, 
+kde mohou být uložena a analyzována. 
+• Batch x Stream data
+• Přijímání dat může být kontinuální, asynchronní, dávkové, v 
+reálném čase nebo jejich kombinace.
+
+Data Storage
+• Schopnost databáze přijímat vstupní data, ukládat je a 
+následně poskytovat k analýze a vizualizaci
+• TSDB x SQL x nonSQL x logging DB x BigData DB x Cloud based
+DB
+
+Parse / Transformation
+• zahrnuje vytvoření požadované struktury dat, která jsou 
+shromažďována ze zařízení IoT. Po této akci jsou výsledná 
+data přenesena k dalšímu zpracování nebo uložení.
+
+Data Enrichment
+• proces obohacování dat je operace, při níž se data 
+shromážděná IoT zařízeními kombinují s dalšími soubory dat 
+(informacemi), aby měla výsledná data větší přidanou 
+hodnotu.
+• Např. do jednoho záznamu o teplotě připojíte informaci o 
+vlhkosti apod ➔ větší přidaná hodnota informace
+
+Analyse / Visualisation
+• Schopnost nástrojů poskytovat nad uloženými daty analýzu a 
+zprostředkovat vizuální zobrazení dat do lidsky čitelné 
+podoby
+
+ML / Anomaly Detection / Thresholds
+• Kontinuální příchod dat z IoT zařízení umožňuje nad daty 
+provádět např. near-realtime detekci událostí – aplikace / 
+nástroj
+
+-->
+
+--- 
+
+<!-- 
+backgroundColor: #FFF
+ -->
+
+![bg fit 80%](assets/IoT-servies.png)
+
+---
+
+![bg fit 70%](assets/M2M.png)
+
+---
+<!-- 
+backgroundColor: #000
+footer: IoT: Trendy
+ -->
+
+# Trendy v IoT
+## Průmysl 4.0
+
+- analýza, reakce, predikce
+- těžba dat
+- AI & BigData
+
+![bg right fit](assets/industry-revolutions)
+
+---
+
+# Trendy v IoT
+## Digital Twins
+
+- model reálného světa
+- Azure Digital Twins
+- optimalizace
+
+![bg right fit](assets/digital-twins)
+
+---
+
+# Trendy v IoT
+## Bezpečnost
+
+- [nic.cz](https://www.iot-portal.cz/2018/03/02/bezpecnost-a-iot-vzdyt-se-nemuze-nic-stat/)
+- aktualizace
+- měnit nativní hesla (spotřebiče)
+
+![bg right fit](assets/iot-security)
+
+---
+
+# Azure IoT
+## IoT jako platforma
+
+- Azure IoT Hub
+- Azure Digital Twins
+- Azure IoT Certification
+
+![bg right 40%](assets/iot-hub.svg)
+
+---
+
+# Azure IoT
+## Správa IoT Aplikací
+
+- Azure IoT Central
+- IoT Central app templates
+- Azure IoT Certification
+
+![bg right 40%](assets/iot-central-alt-2.svg)
+
+---
+
+# Azure IoT
+## Další služby
+
+- Azure IoT Edge
+- Windwos for IoT
+- Azure RTOS
+
+![bg right 40%](assets/rtos.svg)
 
 ---
 ## Chci feedback!
