@@ -238,6 +238,17 @@ Rozdelil jsem si sam, neni nijako standartizovano
   - ESP32, ESP8266
   - Raspberry PI Pico W
   - CC3200 nebo CC3220 (Texas Instruments), ATSAMW25 (Microchip), ...
+
+
+---
+
+## 2. Zpracování signálu
+### Programátorem
+
+- Jazyky: Assembly, C/C++, Rust, *(Python)*
+- PlatformIO, ESP-IDF, Kail, VxWorks, *(ArduinoIDE)*, ...
+
+> ***Datasheet a multimetr jsou nejlepší kámošové***
   
 ---
 
@@ -477,6 +488,25 @@ footer: IoT: Trendy
 - Azure RTOS
 
 ![bg right 40%](assets/rtos.svg)
+
+---
+<!-- footer: IoT: Shrnutí -->
+
+**Základní vrstvy**
+- fyzikálních dat
+- zpracování signálu
+- přenos dat
+- vizualizace a těžba dat
+
+**Azure IoT**
+- Azure IoT Hub
+- Azure IoT Central
+
+---
+
+<!-- footer: "" -->
+
+![bg fit](assets/curpauza.png)
 
 ---
 ## Chci feedback!
