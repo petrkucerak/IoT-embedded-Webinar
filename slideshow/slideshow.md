@@ -49,7 +49,7 @@ size: 16:9
 
 <!-- 
 footer:  ""
-
+paginate: true
 -->
 
 # Obsah
@@ -129,15 +129,15 @@ Ma smysl se IoT věnovat?
 <!-- footer: IoT: Vrstvy -->
 # Vrstvy IoT
 
-- fyzikální -> signál (senzory)
-- el. napětí -> digitální (MCU)
-- lokální -> globální (síť)
+- Fyzikální -> Signál (senzory)
+- zpracování signálu (MCU)
+- síťová (vysílání)
 - informace -> znalost (těžba)
 
 <!-- 
 # Vrstvy IoT
 Rozdelil jsem si sam, neni nijako standartizovano
-- fyzikální -> signál (senzory)
+- Fyzikální -> Signál (senzory)
   - úvod do problematiky - zdá se jednoduché, není, dle mého nejkomplikovanější část
 - el. napětí -> digitální (MCU)
   - převod, lockin detekce, PWM, ...
@@ -156,7 +156,7 @@ Rozdelil jsem si sam, neni nijako standartizovano
 
 ---
 
-## 1. fyzikální -> signál
+## 1. Fyzikální -> Signál
 
 - snímač, čidlo, převodník, detektor | RFID tag
 - signál (napěťový, proudový, číslicový)
@@ -167,7 +167,7 @@ Rozdelil jsem si sam, neni nijako standartizovano
 
 ---
 
-## 1. fyzikální -> signál
+## 1. Fyzikální -> Signál
 
 - měřená veličina
   - mechanické a tepelné
@@ -181,7 +181,7 @@ Rozdelil jsem si sam, neni nijako standartizovano
 
 ---
 
-## 1. fyzikální -> signál
+## 1. Fyzikální -> Signál
 
 - kasický měřící vzorec
   - senzor (snímač)
@@ -191,29 +191,156 @@ Rozdelil jsem si sam, neni nijako standartizovano
 
 ---
 
-## 1. fyzikální -> signál
+## 1. Fyzikální -> Signál
 ### CO2 senzor
 
 ![h:380](assets/co2-sensor.jpg)
 
 ---
 
-## 1. fyzikální -> signál
+## 1. Fyzikální -> Signál
 ### Lineární zrychlení (akcelerometr) (MEMS)
 
 ![h:380](assets/MEMS-sensor.ppm)
 
 ---
-## 1. fyzikální -> signál
+## 1. Fyzikální -> Signál
 ### Hallovy senzory
 
 ![h:380](assets/hall-sensors.jpeg)
 
 ---
-## 1. fyzikální -> signál
+## 1. Fyzikální -> Signál
 ### RFID tag
 
 ![h:380](assets/RFID-tag.png)
+
+---
+
+## 2. Zpracování signálu
+
+- A/D převodník
+- PWM modulace
+- zlepšení hodnot (lock-in detekce, ...)
+- problematika spotřeby energie
+- OS, RT systems (Linux, FreeRTOS, WxWorks, ...)
+
+---
+
+## 2. Zpracování signálu
+### Moduly a mikrokontroléry
+
+- výkonější
+  - PC
+  - Raspberry
+  - FPGA
+- muduly a mikrokontroléry
+  - ESP32, ESP8266
+  - Raspberry PI Pico W
+  - CC3200 nebo CC3220 (Texas Instruments), ATSAMW25 (Microchip), ...
+  
+---
+
+## 3. Síťová
+- energetická náročnost
+- rozdílné požadavky
+- typické hiearchické uspořádání
+- bezdrátové / drátové připojení do sítě
+
+---
+
+## 3. Síťová
+### Technologie
+
+- střední dosah
+  - NB-IoT
+  - Sigfox
+  - LoRa
+- malý dosah
+  - ZigBee
+  - Wi-Fi
+  - Bluetooth
+
+---
+
+## 3. Síťová
+### Narrowband IoT
+
+- využívá již vybudovanou infrastrukturu mobilních sítí
+- OFDM modulace
+- přenosová rychlost dle verze 16 - 150 kbit/s
+- vzdálenost 10 - 15 km
+
+![bg right fit](assets/NB-IoT.png)
+
+---
+
+## 3. Síťová
+### Sigfox
+
+- globální **uzavřená** síť
+- nelicencované pásmo 868 MHz
+- *ekonomické problémy*
+- omezené množství zpráv
+- dosah 25 km
+
+![bg right fit](assets/sigfox)
+
+---
+
+## 3. Síťová
+### LoRa a LoRaWAN
+
+- globální **otevřená** síť
+- nelicencované pásmo 868 MHz
+- LoRa vs. LoRaWAN
+- dosah 5 - 10 km
+
+![bg right fit](assets/LoRa)
+
+---
+<!-- footer: "" 
+paginate: false
+backgroundColor: "#FFF"
+-->
+![bg fit 90%](assets/long-randge-tech.png)
+
+---
+<!-- footer: "IoT: Vrstvy" 
+paginate: true
+backgroundColor: "#000"
+-->
+
+## 3. Síťová
+### ZigBee
+
+- senzorové, domácí a průmyslové sítě
+- vzdálenost 75 m
+- nelicencovaná pasmá 868 MHz a 2.4 GHz
+- přenosová rychlost 20, 40 250 kbit/s
+
+![bg right fit](assets/ZigBee.jpg)
+
+---
+## 3. Síťová
+### IEEE 802.11
+
+- specializované módy pro IoT řeší problematiku kolize
+- krátký dosah
+- energetický náročný
+- veliké množství dat
+
+![bg right fit](assets/Wi-Fi)
+
+---
+## 3. Síťová
+### IEEE 802.15
+
+- bezdrátová náhrada RS-232
+- PAN malý dosah *(verze 5.0 více jak 200 m)*
+- ve verzi 5.0 až 255 bajtů na jednu zprávu
+
+![bg right fit](assets/bluetooth)
 
 ---
 ## Chci feedback!
