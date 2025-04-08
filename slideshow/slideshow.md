@@ -50,6 +50,14 @@ size: 16:9
 
 ---
 
+# Kdo jsem já
+
+petrkucerak.cz
+
+![bg right fit](image-4.png)
+
+---
+
 <!-- 
 footer:  ""
 paginate: true
@@ -58,7 +66,7 @@ paginate: true
 # Obsah
 - očekávání
 - IoT
-- AI
+- Embedded, safety development
 - diskuze
 
 <!-- 
@@ -95,6 +103,16 @@ paginate: true
 ---
 
 # Vaše očekávání
+
+---
+
+# Můj vztah k IoT
+
+- studium
+- projekty - automatizace
+- mikronotroléry
+- bakalářka
+- diplomka
 
 ---
 
@@ -228,6 +246,33 @@ Rozdelil jsem si sam, neni nijako standartizovano
 - problematika spotřeby energie
 - OS, RT systems (Linux, FreeRTOS, WxWorks, ...)
 
+![bg right fit](image-1.png)
+
+---
+
+## 2. Zpracování signálu
+
+- A/D převodník
+- PWM modulace
+- zlepšení hodnot (lock-in detekce, ...)
+- problematika spotřeby energie
+- OS, RT systems (Linux, FreeRTOS, WxWorks, ...)
+
+![bg right fit](image-2.png)
+
+---
+
+## 2. Komunikační periferie
+
+- I2C
+- SPI
+- CAN Bus
+- USB
+- RS-232, RS-422
+- UART
+
+![bg right fit](image.png)
+
 ---
 
 ## 2. Zpracování signálu
@@ -237,10 +282,11 @@ Rozdelil jsem si sam, neni nijako standartizovano
   - PC
   - Raspberry
   - FPGA
-- muduly a mikrokontroléry
+  - Sitara
+- muduly a mikrokontroléry (ARM architecture)
   - ESP32, ESP8266
   - Raspberry PI Pico W
-  - CC3200 nebo CC3220 (Texas Instruments), ATSAMW25 (Microchip), ...
+  - CC3200, CC3220 (TI), ATSAMW25 (Microchip), nucleo, STM32 (ST), ...
 
 
 ---
@@ -249,7 +295,7 @@ Rozdelil jsem si sam, neni nijako standartizovano
 ### Programátorem
 
 - Jazyky: Assembly, C/C++, Rust, *(Python)*
-- PlatformIO, ESP-IDF, Kail, VxWorks, *(ArduinoIDE)*, ...
+- PlatformIO, ESP-IDF, Kail, VxWorks, BSD, *(ArduinoIDE)*, ...
 
 > ***Datasheet a multimetr jsou nejlepší kámošové***
   
@@ -456,6 +502,7 @@ footer: IoT: Trendy
 - [nic.cz](https://www.iot-portal.cz/2018/03/02/bezpecnost-a-iot-vzdyt-se-nemuze-nic-stat/)
 - aktualizace
 - měnit nativní hesla (spotřebiče)
+- safe booting
 
 ![bg right fit](assets/iot-security)
 
@@ -493,6 +540,14 @@ footer: IoT: Trendy
 ![bg right 40%](assets/rtos.svg)
 
 ---
+# Deep dive
+
+- bastlení
+- studium?
+- fyzika
+- vše pod kontrolou
+
+---
 <!-- footer: IoT: Shrnutí -->
 
 **Základní vrstvy**
@@ -510,6 +565,53 @@ footer: IoT: Trendy
 <!-- footer: "" -->
 
 ![bg fit](assets/curpauza.png)
+
+---
+
+# Safety platform developement
+
+- motivace
+- automotive, railway, aerospace, medical, army, ...
+- kolik stojí lidský život?
+
+--- 
+
+# Safety vs Security
+
+- kde je důležitá?
+- jak docílit safety?
+- SIL, ASIL, ...
+
+---
+
+# Jak na safe-platform
+## Co si je třeba hlídat
+
+- systémová chyba - řešení: proces
+- náhodná chyba - řešení: systém
+
+---
+
+# Jak na safe-platform
+## Vývojový proces
+
+- V-model
+- jasně definované role
+- analýza hazardu
+- testování
+- style guide & coding standard
+
+![bg right fit](image-3.png)
+
+
+---
+
+# Jak na safe-platform
+## Architektura
+
+- Reactive safety (watchdog)
+- Inherent safety (hardware)
+- Composite safety (redudantion)
 
 ---
 

@@ -1,3 +1,3 @@
-# IoT & AI Webinar
+# IoT & Embedded Webinar
 
-Materiály na webinář o IoT a AI pro @StudentTraineeCenter.
+Materiály na webinář o IoT a Embedded pro @StudentTraineeCenter.
